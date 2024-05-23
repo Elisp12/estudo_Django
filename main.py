@@ -1,1 +1,3 @@
-print('Hallo')
+def mostrar():
+    print('Hallo')
+mostrar()
