@@ -3,5 +3,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home (request):
-    return render(request,'recipes/home.html') 
+    return render(request,'base-home/pages/home.html', context=
+        {'name':'Eliseu',
+}) 
 
