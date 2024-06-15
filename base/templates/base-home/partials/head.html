@@ -42,7 +42,7 @@
             font-size: 1.6rem;
             font-family: var(--font-primary);
             background: silver;
-            color: darkslategray;
+            color: darkslategrey;
         }
 
         h1,
@@ -135,25 +135,86 @@
             box-shadow: -5px 5px 10px rgba(0,0,0, .2);
             transform: scale(1);
             transition: all 300ms ease-in-out;
-        }
+            border-radius: .5rem;
+            overflow: hidden;
 
+        }
         .pice img {
             max-width: 100%;
-          
-            
         }
         .pice-list-item {
-            max-width: 64rem;
-               
+            max-width: 64rem;    
         }
         .pice-list-item:hover {
             transform: scale(1.02);
             box-shadow: -8px 8px 18px rgba(0,0,0, .25);
-
         }
         .pice-title-container {
             padding: var(--spacing-gutter-mediun);
+            padding-bottom: 2rem;
+        }  
+        .pice-author {
+            padding: 0 var(--spacing-gutter-mediun);
         }
-        
+
+        .pice-content {
+            padding: var(--spacing-gutter-mediun);
+            padding-top: 2rem;
+        }
+        .pice-author-item {
+            color: gray;
+            margin-right: 1rem;
+        }
+        .pice-author a {
+            color: deepskyblue;
+            transition: all 300ms ease-in-out;
+            text-decoration: none;
+        }
+        .pice-author a:hover {
+            color: black;
+        }
+        .pice-meta-container {
+            display: flex;
+            flex-flow: row wrap;
+            padding: var(--spacing-gutter-mediun);
+            background: lightgrey;
+        }
+        .pice-meta {
+            display: flex;
+            flex-flow: column nowrap;
+            flex-shrink: 1;
+            flex-grow: 1;
+            text-align: center;
+        }
+        .pice-meta-title {
+            font-size: 1.6rem;
+        }
+        .pice-footer a{
+            background: black;
+            display: block;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding: 1.5rem var(--spacing-gutter-mediun)       
+        }
+        .pice-footer a:hover {
+            filter: brightness(2);
+        }
+        .main-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: black;
+            color: bisque;
+            padding: var(--spacing-gutter-large);
+        }
+        .main-footer a {
+            color: white;
+            text-decoration: none;
+            transition: all 300ms all ease-in-out;
+        }
+        .main-footer a:hobver {
+            filter: brightness(.8);
+        }
     </style>
 </head>
