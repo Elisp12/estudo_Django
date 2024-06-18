@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
 # Create your views here.
 
 def home (request):
@@ -7,3 +7,7 @@ def home (request):
         {'name':'Eliseu',
 }) 
 
+def pice (request, id):
+    return render(request,'base-home/pages/list_view.html', context=
+        {'name':'Eliseu',
+})

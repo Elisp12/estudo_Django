@@ -1,9 +1,10 @@
 from django.urls import path
-from base.views import home
+from . import views
 
 
 
 urlpatterns = [
-    path('', home), # home
+    path('', views.home), # home
+    path('pice/<int:id>/', views.pice), # home
    
 ]
