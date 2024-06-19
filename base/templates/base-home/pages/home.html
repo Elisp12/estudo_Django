@@ -4,11 +4,8 @@
 
 {% block content %}
     <div class="main-content main-content-list container">
-        {% include "base-home/partials/item-list.html" %}
-        {% include "base-home/partials/item-list.html" %} 
-        {% include "base-home/partials/item-list.html" %} 
-        {% include "base-home/partials/item-list.html" %} 
-        {% include "base-home/partials/item-list.html" %} 
-        {% include "base-home/partials/item-list.html" %}    
+        {% for part in parts %} 
+            {% include "base-home/partials/item-list.html" %}
+        {% endfor %}
     </div>
 {% endblock content %}
