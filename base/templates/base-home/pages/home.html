@@ -1,18 +1,12 @@
-{% include "base-home/partials/head.html" %}
+{% extends "global/base.html" %}
 
-<body>
-    {% include "base-home/partials/header.html" %}
-    {% include "base-home/partials/search.html" %}
-    <main class="main-content-container">
-        <div class="main-content main-content-list container">
-            {% include "base-home/partials/item-list.html" %}
-            {% include "base-home/partials/item-list.html" %} 
-            {% include "base-home/partials/item-list.html" %} 
-            {% include "base-home/partials/item-list.html" %} 
-            {% include "base-home/partials/item-list.html" %} 
-            {% include "base-home/partials/item-list.html" %}    
-        </div>
-    </main>
-    {% include 'base-home/partials/footer.html' %}
-</body>
-</html>
+{% block content %}
+    <div class="main-content main-content-list container">
+        {% include "base-home/partials/item-list.html" %}
+        {% include "base-home/partials/item-list.html" %} 
+        {% include "base-home/partials/item-list.html" %} 
+        {% include "base-home/partials/item-list.html" %} 
+        {% include "base-home/partials/item-list.html" %} 
+        {% include "base-home/partials/item-list.html" %}    
+    </div>
+{% endblock content %}
