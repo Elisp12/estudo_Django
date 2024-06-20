@@ -8,7 +8,7 @@ def home (request):
         'parts': [make_parts() for _ in range(10)],
 }) 
 
-def pice (request, id):
+def parts (request, id):
     return render(request,'base-home/pages/list_view.html', context={
         'part': [make_parts],
 })

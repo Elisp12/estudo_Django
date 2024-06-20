@@ -5,6 +5,6 @@ from . import views
 
 urlpatterns = [
     path('', views.home), # home
-    path('pice/<int:id>/', views.pice), # home
+    path('parts/<int:id>/', views.parts), # home
    
 ]
