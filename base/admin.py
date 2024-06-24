@@ -1,3 +1,14 @@
 from django.contrib import admin
-
+from .models import Category, Parts
 # Register your models here.
+
+class CategoryAdmin(admin.ModelAdmin):
+    ...
+
+admin.site.register(Category, CategoryAdmin)
+
+
+class PartsAdmin(admin.ModelAdmin):
+    ...
+
+admin.site.register(Parts, CategoryAdmin)
