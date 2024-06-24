@@ -9,6 +9,7 @@ def home (request):
 }) 
 
 def parts (request, id):
-    return render(request,'base-home/pages/list_view.html', context={
-        'part': [make_parts],
-})
+    return render(request,'base-home/pages/list_view.html', context= {
+        'part': make_parts(),
+        'is_detail_page' : True,
+})  
