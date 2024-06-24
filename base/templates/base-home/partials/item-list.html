@@ -1,10 +1,16 @@
 <div class="part part-list-item">
     <div class="part-cover">
-        <img src= "{{ part.cover.url }}" alt="Temporário">
+        <a href="{% url 'parts:part' part.id %}">
+            <img src= "{{ part.cover.url }}" alt="Temporário">
+        </a>
     </div>
 
     <div class="part-title-container">
-        <h2 class="part-title">{{part.title}}</h2>
+        <h2 class="part-title">
+            <a href="{% url 'parts:part' part.id %}">
+                {{part.title}}
+            </a>
+        </h2>
     </div>
 
     <div class="part-author">
@@ -47,7 +53,7 @@
 
     {% if is_detail_page is not True %}
         <footer class="part-footer">
-            <a class="part-read-more button button-dark button-full-width" href="/part/3/">
+            <a class="part-read-more button button-dark button-full-width" href="{% url 'parts:part' part.id %}">
                 <i class="fas fa-eye"></i>
                 <span>ver mais...</span>
             </a>
