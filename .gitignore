@@ -128,3 +128,4 @@ gunicorn-error-log
 #static/
 Ignore
 eu.txt
+.jpg

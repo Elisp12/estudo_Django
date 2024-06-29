@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from utils.parts.factory import make_parts
+from .models import Parts
+
 
 # Create your views here.
 
