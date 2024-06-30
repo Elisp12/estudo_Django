@@ -7,7 +7,7 @@ from .models import Parts
 
 def home (request):
     return render(request,'base-home/pages/home.html', context= {
-        'parts': [make_parts() for _ in range(10)],
+        'parts': Parts.objects.all(),
 }) 
 
 def parts (request, id):
